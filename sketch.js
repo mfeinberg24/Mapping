@@ -35,28 +35,28 @@ if (originalmap){
 
 
 let json;
-function preload() {
+// function preload() {
 
-  cx = mercX(clon);
-  cy = mercY(clat);
+//   cx = mercX(clon);
+//   cy = mercY(clat);
 
 
-  if (originalmap){
-  mapUrl = "https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/" + clon + "," + clat + "," + zoom + "," +
-    "0,0/1024x512?access_token=pk.eyJ1Ijoia2VlbmFuZ3JheSIsImEiOiJjbDltdHU3ZzEwMWJ6M3dubHlhMDMybHJ4In0.Go3MKj2uDvnizU2H-iiUHQ";
-  mapimg = loadImage(mapUrl);
-  } else{
- mapUrl = "https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/-71.0617,42.3135,10.4,0/585x1266?access_token=pk.eyJ1IjoibWZlaW5iZXJnIiwiYSI6ImNsYWI2bnFuNzAwczczb243NGpyejhuMWkifQ.aUKZAxciz9GrVWvz0qG-dA"
-  mapimg = loadImage(mapUrl);
-  }
+//   if (originalmap){
+//   mapUrl = "https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/" + clon + "," + clat + "," + zoom + "," +
+//     "0,0/1024x512?access_token=pk.eyJ1Ijoia2VlbmFuZ3JheSIsImEiOiJjbDltdHU3ZzEwMWJ6M3dubHlhMDMybHJ4In0.Go3MKj2uDvnizU2H-iiUHQ";
+//   mapimg = loadImage(mapUrl);
+//   } else{
+//  mapUrl = "https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/-71.0617,42.3135,10.4,0/585x1266?access_token=pk.eyJ1IjoibWZlaW5iZXJnIiwiYSI6ImNsYWI2bnFuNzAwczczb243NGpyejhuMWkifQ.aUKZAxciz9GrVWvz0qG-dA"
+//   mapimg = loadImage(mapUrl);
+//   }
 
  
 
-  Tjason = loadJSON(Turl);
+//   Tjason = loadJSON(Turl);
 
 
 
-}
+// }
 
 setInterval(function () {
   Tjason = JSON.parse(Get(Turl));
