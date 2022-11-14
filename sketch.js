@@ -1,6 +1,6 @@
-let debug = false;
+let debug = true;
 let Turl;
-let originalmap = false;
+let originalmap = true;
 
 if (debug) {
   Turl = "https://api-v3.mbta.com/vehicles?filter%5Broute_type%5D=1&api_key=a3702bb23cb44a24bce28119a8db0ec0"
